@@ -1,40 +1,41 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fff;
-  padding: 10px;
+  font-family: sans-serif;
 }
 
 table {
-  width: 60%;
-  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  margin: 10px auto;
   border-collapse: collapse;
-  table-layout: fixed;
   color: black;
   font-size: 14px;
+  line-height: 1.6;
   background-color: #ebebf0;
 }
 
 th,
 td {
   border: 1px solid grey;
-  padding: 6px 8px;
-  text-align: left;
+  padding: 0.5em;
   vertical-align: middle;
-  line-height: 1.6;
-  background-color: #ebebf0;
+  width: 7%;
 }
 
 th {
-  color: black;
   text-align: center;
+  color: #2d5d8c;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
-.section-title th {
-  background-color: #ebebf0;
-  color: black;
-  text-align: center;
+.section-title:not(.noitalic) th {
+  font-style: italic;
 }
 
 td {
   background-color: white;
+}
+
+.big-column {
+  width: 70%;
 }
